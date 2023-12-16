@@ -1,0 +1,35 @@
+Lecture 1 - Internet
+
+A. How does the Internet work?
+	- https://cs.fyi/guide/how-does-internet-work
+	- https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work
+	- https://roadmap.sh/guides/what-is-internet
+	- https://www.youtube.com/watch?v=TNQsmPf24go
+	- https://www.youtube.com/watch?v=7_LPdttKXPc
+
+B. What is HTTP?
+	- https://cs.fyi/guide/http-in-depth
+	- https://developer.mozilla.org/en-US/docs/Web/HTTP
+	- https://www.youtube.com/watch?v=iYM2zFP3Zn0
+
+C. What is a Domain Name?
+	- https://www.youtube.com/watch?v=Y4cRx19nhJk
+	- https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name
+
+D. What is a Hosting? 
+	- https://www.youtube.com/watch?v=htbY9-yggB0
+	- https://www.youtube.com/watch?v=AXVZYzw8geg
+	- https://www.youtube.com/watch?v=Kx_1NYYJS7Q
+
+E. What is a DNS Server?
+	- https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/
+	- https://www.youtube.com/watch?v=Wj0od2ag5sk
+	- https://www.youtube.com/watch?v=7lxgpKh_fRY
+	- https://www.youtube.com/watch?v=e48AyJOA9W8
+	- https://www.youtube.com/watch?v=YV5tkQYcvfg
+
+F. What is a Browser and how does it work?
+	- https://web.dev/articles/howbrowserswork
+	- https://www.browserstack.com/guide/browser-rendering-engine
+	- https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work
+	- https://www.youtube.com/watch?v=WjDrMKZWCt0
