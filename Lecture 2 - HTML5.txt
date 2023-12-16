@@ -1,0 +1,8 @@
+Lecture 2 - HTML5
+
+A. HTML Basics - Elements/Attributes/Semantic
+	- https://www.linkedin.com/learning/paths/become-a-full-stack-web-developer?u=76815186
+	- https://www.scaler.com/topics/html/
+	- https://www.youtube.com/watch?v=pQN-pnXPaVg
+
+X. HTML Element References - https://htmlreference.io/
