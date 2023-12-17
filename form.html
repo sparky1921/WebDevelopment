@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,7 +23,6 @@
             <input type="text" name="firstName" id="firstName">
             <label for="lastName">Last Name:</label>
             <input type="text" name="lastName" id="lastName">
-
             <!-- Radio Input -->
             <label for="gender">Gender:</label>
             <label for="male">Male</label>
@@ -37,7 +41,7 @@
         <fieldset>
             <legend>Contact Information</legend>
             <!-- Telephone Input -->
-            <label for="phoneNumber">Phone phoneNumber:</label>
+            <label for="phoneNumber">Phone Number:</label>
             <input type="tel" name="phoneNumber" id="phoneNumber">
             <!-- Email Input -->
             <label for="email">Email:</label>
@@ -47,10 +51,10 @@
             <textarea name="address" id="address" cols="20" rows="10">Enter your address here.</textarea>
             <!-- File Upload Input -->
             <label for="resume">Select a resume:</label>
-            <input type="file" id="resume" name="resume"><br><br>
+            <input type="file" id="resume" name="resume">
             <!-- URL Input -->
             <label for="linkedin">LinkedIn Profile:</label>
-            <input type="url" id="linkedin" name="linkedin"><br>
+            <input type="url" id="linkedin" name="linkedin">
         </fieldset>
 
         <!-- Select List, OptionGroup and Option -->
