@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <form action="submit.php" method="post">
+        <!-- Fieldset to define group of inputs -->
+        <fieldset>
+            <!-- Legend to define the title of input group -->
+            <legend>Personal Information</legend>
+            <!-- Type Input -->
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName">
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName">
+
+            <!-- Radio Input -->
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <!-- Number Input -->
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="0" max="100" step="1">
+            <!-- Range Input -->
+            <label for="height">Height (in feet):</label>
+            <input type="range" id="height" name="height" min="0" max="10" step="1"><br><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <!-- Telephone Input -->
+            <label for="phoneNumber">Phone phoneNumber:</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber">
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <!-- Textarea Input -->
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="20" rows="10">Enter your address here.</textarea>
+            <!-- File Upload Input -->
+            <label for="resume">Select a resume:</label>
+            <input type="file" id="resume" name="resume"><br><br>
+            <!-- URL Input -->
+            <label for="linkedin">LinkedIn Profile:</label>
+            <input type="url" id="linkedin" name="linkedin"><br>
+        </fieldset>
+
+        <!-- Select List, OptionGroup and Option -->
+        <label for="car">Select a car:</label>
+        <!-- Select define a drop-down list to select a value -->
+        <select id="car" name="car">
+            <!-- Optgroup categorise the options into categories -->
+            <optgroup label="Japanese Cars">
+                <!-- Option use to create list -->
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="nissan">Nissan</option>
+            </optgroup>
+            <optgroup label="American Cars">
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="dodge">Dodge</option>
+            </optgroup>
+            <optgroup label="European Cars">
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mercedes">Mercedes-Benz</option>
+            </optgroup>
+        </select>
+
+        <!-- Datalist -->
+        <label for="fruit">Select or type a fruit:</label>
+        <input list="fruits" id="fruit" name="fruit">
+        <datalist id="fruits">
+            <option value="Apple">
+            <option value="Banana">
+            <option value="Orange">
+            <option value="Grapes">
+            <option value="Strawberry">
+        </datalist>
+
+        <!-- Color Picker -->
+        <label for="colorPicker">Pick your favorite color:</label>
+        <input type="color" id="colorPicker" name="colorPicker"><br><br>
+
+        <!-- Hidden Input - used to create an invisible input field in a form. It's not visible to users and doesn't display anything on the screen, but it's valuable for passing information between the client-side and server-side scripts without user interference or knowledge -->
+        <input type="hidden" id="hiddenInput" name="hiddenInput" value="hiddenvalue"><br><br>
+
+        <!-- Month Picker -->
+        <label for="month">Month:</label>
+        <input type="month" name="month" id="month">
+        <!-- Week Picker -->
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week"><br>
+        <!-- Date Input -->
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date"><br>
+        <!-- Time Input -->
+        <label for="availability">Availability</label>
+        <input type="time" id="availability" name="availability"><br>
+        <!-- Password Input -->
+        <label for="passwordInput">Create a password:</label>
+        <input type="password" id="passwordInput" name="passwordInput"><br>
+        <!-- Checkbox Input -->
+        <label for="agreement1">Do you agree with all of our rules and regulations?</label>
+        <input type="checkbox" name="agreement" id="agreement1" value="rules"><br>
+        <label for="agreement2">Do you want us to use your information for Research & Development?</label>
+        <input type="checkbox" name="agreement" id="agreement2" value="information"><br>
+
+        <!-- Buttons -->
+        <input type="reset" name="reset" id="reset">
+        <input type="submit" name="submit" id="submit">
+        <!-- Better to use buttons then using input reset and submit
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button> -->
+    </form>
+</body>
+
+</html>

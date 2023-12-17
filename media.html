@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Medias</title>
+</head>
+
+<body>
+    <!--Images:
+            JPEG (.jpg, .jpeg): Suitable for photographs and complex images, offering good compression with minimal loss of quality.
+            PNG (.png): Ideal for images with transparency or detailed graphics, providing lossless compression.
+            SVG (.svg): Scalable Vector Graphics, great for logos, icons, and graphics requiring scalability without loss of quality.
+        Videos:
+            MP4 (.mp4): Widely supported for web video playback, offering good compression and quality.
+            WebM (.webm): Known for high-quality streaming and open web media formats.
+            Ogg (.ogg): Open-source format, suitable for web video and audio.
+        Audio:
+            MP3 (.mp3): Common for audio files due to its high compatibility across devices and browsers.
+            Ogg (.ogg): Often used for audio files due to its open-source nature and good quality.
+        Interactive/Graphics:
+            GIF (.gif): Supports animation and short video clips, widely used for social media and simple animations.
+            WEBP (.webp): Developed by Google, offers both lossy and lossless compression for images and animations. -->
+
+
+    <!-- Image Element -->
+    <img src="image.jpg" alt="Description of the image" width="300" height="200">
+    
+    <!-- Image with link -->
+    <img src="https://www.example.com/image.jpg" alt="Description of the image">
+    <!-- OR -->
+    <a href="link_to_full_image.jpg" target="_blank"><img src="thumbnail_image.jpg" alt="Description of the image"></a>
+    
+    <!-- Image with source set -->
+    <!-- Provides a list of image sources followed by their display densities (1x, 2x, 3x). Browsers choose the appropriate image based on the user's device pixel ratio -->
+    <img src="image-1x.jpg" srcset="image-1x.jpg 1x, image-2x.jpg 2x, image-3x.jpg 3x" alt="Description of the image"
+        width="800" height="600">
+
+    <!--srcset: Specifies different image sources with their respective widths (400w, 800w, 1200w).
+        sizes: Defines the image sizes based on media queries, indicating the image width under different viewport conditions. -->
+    <img src="image-400w.jpg" srcset="image-400w.jpg 400w, image-800w.jpg 800w, image-1200w.jpg 1200w"
+        sizes="(max-width: 600px) 400px, (max-width: 1000px) 800px, 1200px" alt="Description of the image">
+
+
+
+    <!-- Video Element -->
+    <video width="640" height="360" controls autoplay muted poster="thumbnail.jpg">
+        <!-- Source 1: MP4 video -->
+        <source src="video.mp4" type="video/mp4">
+        <!-- Source 2: WebM video -->
+        <source src="video.webm" type="video/webm">
+        <!-- Fallback content -->
+        Your browser does not support the video tag.
+        <!-- Track: Subtitles -->
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+
+
+
+    <!-- Audio Element -->
+    <audio controls autoplay muted>
+        <!-- Source 1: MP3 audio -->
+        <source src="audio.mp3" type="audio/mpeg">
+        <!-- Source 2: Ogg audio -->
+        <source src="audio.ogg" type="audio/ogg">
+        <!-- Fallback content -->
+        Your browser does not support the audio tag.
+        <!-- Track: Audio description -->
+        <track src="description_en.vtt" kind="descriptions" srclang="en" label="English">
+    </audio>
+
+
+
+    <!-- HTML Plug-ins -->
+    <!-- Plug-ins were designed to enable various functionalities such as running Java applets, Microsoft ActiveX controls, displaying Flash movies, maps, scanning for viruses, and verifying bank IDs -->
+
+    <!-- Object Element - It was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages, but can also be used to include HTML in HTML -->
+    <h2>Object Element Example</h2>
+    <!-- Java Applet -->
+    <object type="application/java" width="300" height="300" data="applet.jar"></object>
+    <br><br>
+    <!-- HTML in object -->
+    <object width="100%" height="500px" data="snippet.html"></object>
+    <br><br>
+    <!-- Flash Movie -->
+    <object type="application/x-shockwave-flash" width="400" height="300" data="movie.swf"></object>
+    <br><br>
+    <!-- Google Maps -->
+    <object type="text/html" width="600" height="450"
+        data="https://www.google.com/maps/embed?pb=!1m18!1m12!..."></object>
+
+
+    <!-- Embed Element - defines an embedded object within an HTML document -->
+    <h2>Embed Element Examples</h2>
+    <!-- Image -->
+    <embed src="image.jpg" type="image/jpeg" width="300" height="200"><br><br>
+    <!-- Audio -->
+    <embed src="audio.mp3" type="audio/mpeg" width="300" height="50"><br><br>
+    <!-- Video -->
+    <embed src="video.mp4" type="video/mp4" width="640" height="360"><br><br>
+    <!-- Flash -->
+    <embed src="movie.swf" type="application/x-shockwave-flash" width="400" height="300"><br><br>
+    <!-- PDF -->
+    <embed src="document.pdf" type="application/pdf" width="600" height="400"><br><br>
+    <!-- Web Content (Google Maps) -->
+    <embed src="https://www.google.com/maps/embed?pb=!1m18!1m12!..." type="text/html" width="600" height="450">
+
+
+    <!-- iFrames Element - easiest way to play videos in HTML -->
+    <!-- using an <iframe> by setting the src attribute to the video URL, specifying the player's dimensions with width and height attributes, and including additional parameters within the URL for specific settings -->
+    <h2>iframe Attribute Examples</h2>
+    <!-- Basic Embedding with Name Atrribute and allow full screen -->
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?" width="800" height="600" title="Example Video"
+        name="exampleFrame" allowfullscreen></iframe>
+    <br><br>
+    <!-- Sandbox Attribute -->
+    <iframe src="https://www.example.com" width="800" height="600" sandbox></iframe>
+    <br><br>
+    <!-- Lazy Loading -->
+    <iframe src="https://www.example.com" width="800" height="600" loading="lazy"></iframe>
+    <br><br>
+    <!-- Seamless Attribute -->
+    <iframe src="https://www.example.com" width="800" height="600" seamless></iframe>
+    <br><br>
+
+
+    <h2>iframe for YouTube Videos</h2>
+    <!-- Basic YT iframe -->
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?" width="800" height="600" title="Example Video"
+        allowfullscreen></iframe>
+    <!-- YouTube Controls
+    Add controls=0 to not display controls in the video player.
+    Value 0: Player controls does not display.
+    Value 1 (default): Player controls display. -->
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=1" width="800" height="600"></iframe>
+    <!-- YouTube Loop
+    Add loop=1 to let your video loop forever.
+    Value 0 (default): The video will play only once.
+    Value 1: The video will loop (forever). -->
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+    </iframe>
+    <!-- YouTube Autoplay -->
+    <!-- Add mute=1 after autoplay=1 to let your video start playing automatically (but muted) -->
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+    </iframe>
+</body>
+
+</html>
