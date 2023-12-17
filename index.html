@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylesheet CSS</title>
+    <!-- Linking external CSS Stylesheet to the HTML file -->
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+    <!-- Internal CSS Styles -->
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <navbar>
+            <nav>
+                <ul class="nav">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="f&q.html">F&Q's</a></li>
+                </ul>
+            </nav>
+        </navbar>
+
+        <!-- Inline CSS Styles -->
+        <h1 style="border: 1px solid white; text-align: center; font-size: 1.5rem; color: red; padding: 5px;">Main
+            Heading</h1>
+        <p id="tagline">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus dicta, repellendus, voluptatum
+            eveniet tempore
+            voluptate consequuntur in, porro corporis distinctio adipisci. Reprehenderit, cupiditate? Rerum, laudantium!
+        </p>
+    </header>
+
+    <main>
+        <section class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Plastic</td>
+                        <td>Acetone</td>
+                        <td>Flame Test</td>
+                        <td>Heat</td>
+                        <td>Crease Color</td>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>Plastic</td>
+                        <td>Acetone</td>
+                        <td>Flame Test</td>
+                        <td>Heat</td>
+                        <td>Crease Color</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>No effects</td>
+                        <td>good</td>
+                        <td>100 C</td>
+                        <td>black</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Damaged</td>
+                        <td>bad</td>
+                        <td>50 C</td>
+                        <td>fail</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>No effects</td>
+                        <td>good</td>
+                        <td>100 C</td>
+                        <td>black</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Damaged</td>
+                        <td>bad</td>
+                        <td>50 C</td>
+                        <td>fail</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="form">
+            <form action="submit.php" method="post" target="_blank">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                    </div>
+
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age" min="0" max="100" step="1">
+                    </div>
+
+                    <div>
+                        <label for="height">Height (in feet):</label>
+                        <input type="range" id="height" name="height" min="0" max="10" step="1"><br><br>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <aside class="highlights">
+        <h2>What's new today?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor officia ipsum itaque,
+            cumque veritatis
+            beatae necessitatibus vel incidunt at corporis voluptate nisi totam ad tenetur sint. Dolorem repudiandae
+            labore, fuga at sunt incidunt. Incidunt illo qui sit quidem numquam impedit perspiciatis nobis totam
+            laudantium. Temporibus ad, dolore ab laboriosam reiciendis, iste cum aliquid mollitia sequi eum labore nulla
+            fugiat natus beatae. Itaque amet veniam magni nemo, dolores quia voluptate placeat quibusdam quisquam illo
+            porro voluptatibus incidunt! Laudantium, distinctio voluptas voluptates iusto ipsam suscipit quae?
+            Voluptates dolor fugiat possimus cum omnis. Excepturi repellat quod maxime illum quidem officiis eligendi
+            provident?</p>
+        <img src="https://picsum.photos/300/300" alt="Random Image">
+    </aside>
+</body>
+
+</html>

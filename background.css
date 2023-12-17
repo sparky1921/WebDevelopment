@@ -1,0 +1,122 @@
+/* Lecture 3 - CSS Backgrounds */
+
+/* First of all, we will understand opacity of an element */
+/* Opacity / Transparency 
+    - The opacity property specifies the opacity/transparency of an element
+    - It can take a value from 0.0 - 1.0
+    - The lower value, the more transparent */
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+/* Note: When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read */
+
+/* The CSS background properties are used to add background effects for elements
+    In these chapters, you will learn about the following CSS background properties:
+        - background-color
+        - background-image
+        - background-repeat
+        - background-position
+        - background-attachment
+        - background (shorthand property) */
+
+/* Background Color
+    - The background-color property specifies the background color of an element */
+/* background color of a page is set to lightblue */
+body {
+  background-color: lightblue;
+}
+/* Other elements background colors */
+h1 {
+  background-color: green;
+}
+div {
+  background-color: lightblue;
+}
+p {
+  background-color: yellow;
+}
+
+/* Background Image
+    - The background-image property specifies an image to use as the background of an element
+    - By default, the image is repeated so it covers the entire element */
+/* Background Image of a page is set here */
+body {
+  background-image: url("paper.gif");
+}
+/* The background image can also be set for specific elements, like the <p> element */
+p {
+  background-image: url("paper.gif");
+}
+/* Note: When using a background image, use an image that does not disturb the text. */
+
+/* Background Image Repeat OR Background Repeat
+  - By default, the background-image property repeats an image both horizontally and vertically
+  - Some images should be repeated only horizontally or vertically, or they will look strange */
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat;
+}
+/* The image is repeated only horizontally (background-repeat: repeat-x;), the background will look better */
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+/* To repeat an image vertically set */
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-y;
+}
+/* To show the background image only once, in other word no repetation */
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: no-repeat;
+}
+
+/* Background Position
+    - The background-position property is used to specify the position of the background image */
+/* Here, the position the background image in the top-right corner */
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top; /* x-direction y-direction; */
+}
+
+/* Background Attachment
+    - The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page) */
+/* Here, it specify that the background image should be fixed */
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+/* Specify that the background image should scroll with the rest of the page */
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+}
+
+/* Background Shorthand
+    - To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property */
+/* Instead of writing */
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+/* You can use the shorthand property background */
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+/* When using the shorthand property the order of the property values is:
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position
+It does not matter if one of the property values is missing, as long as the other ones are in this order. Look we do not use the background-attachment property in the examples above, as it does not have a value */
+

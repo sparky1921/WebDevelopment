@@ -1,0 +1,129 @@
+/* Lecture 2 - CSS Colors */
+
+/* Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values */
+
+/* CSS Color Name
+- Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+- Example: Tomato, Orange, Red, Black, Gray, DodgerBlue, MediumSeaGreen, SlateBlue, Violet */
+
+/* CSS Background Color
+    - By this you can set the background color for HTML elements
+    - Default is White */
+
+h1 {
+  background-color: dodgerblue;
+}
+p {
+  background-color: tomato;
+}
+
+/* CSS Text Color
+    - By this you can set the color of text
+    - Default is Black */
+h1 {
+  color: gray;
+}
+P {
+  color: white;
+}
+
+/* CSS Border Color
+    - By this you can set the border and its color
+    - Default is Black */
+h1 {
+  border: 2px solid red;
+}
+p {
+  border: 4px dashed violet;
+}
+
+/* CSS Color Values 
+    - In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values*/
+/* Same as color name "Tomato" */
+h1 {
+  /* Color Name Value */
+  background-color: tomato;
+}
+p {
+  /* RGB Color Value */
+  background-color: rgb(255, 99, 71);
+}
+div {
+  /* HEX Color Code */
+  background-color: #ff6347;
+}
+span {
+  /* HSL Color Value */
+  background-color: hsl(9, 100%, 64%);
+}
+a {
+  /* RGBA & HSLA Color Value */
+  /* 'A' in RGBA & HSLA means ALPHA which controls the opacity of the color */
+  background-color: hsla(9, 100%, 64%, 0.8);
+  background-color: rgba(255, 99, 71, 0.5);
+}
+
+/* RGB Colors
+    - In CSS, a color can be specified as an RGB value, using this formula: rgb(red, green, blue) 
+    - Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255
+    - Example: 
+        - rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0
+        - To display black, set all color parameters to 0, like this: rgb(0, 0, 0)
+        - To display white, set all color parameters to 255, like this: rgb(255, 255, 255) */
+p {
+  color: rgb(255, 0, 0) rgb(0, 0, 255) rgb(60, 179, 113) rgb(238, 130, 238)
+    rgb(255, 165, 0) rgb(106, 90, 205);
+}
+/* Shades of gray are often defined using equal values for all the 3 light sources */
+p {
+  color: rgb(60, 60, 60) rgb(90, 90, 90) rgb(120, 120, 120) rgb(180, 180, 180)
+    rgb(210, 210, 210) rgb(240, 240, 240);
+}
+
+/* HEX Colors
+    - A hexadecimal color is specified with: #rrggbb
+    - Where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color
+    - We can set hexadecimal values between 00 and ff (same as decimal 0-255)
+    - Example:
+        - #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00)
+        - To display black, set all values to 00, like this: #000000
+        - To display white, set all values to ff, like this: #ffffff */
+p {
+  color: #ff0000 #0000ff #3cb371 #ee82ee #ffa500 #6a5acd;
+}
+/* Shades of gray are often defined using equal values for all the 3 light sources */
+p {
+  color: #3c3c3c #616161 #787878 #b4b4b4 #f0f0f0 #f9f9f9;
+}
+/* Sometimes you will see a 3-digit hex code in the CSS source
+    - The 3-digit hex code is a shorthand for some 6-digit hex codes.
+    - The 3-digit hex code has the form: #rgb
+    - The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each component
+    - Example: if we have #ff00cc, it can be written like this: #f0c */
+p {
+  color: #f0f #b58 #fc9;
+}
+
+/* HSL Colors
+    - HSL stands for hue, saturation, and lightness
+    - A color can be specified using hue, saturation, and lightness (HSL) in the form: hsl(hue, saturation, lightness) */
+p {
+  color: hsl(0, 100%, 50%) hsl(240, 100%, 50%) hsl(147, 50%, 47%)
+    hsl(300, 76%, 72%) hsl(39, 100%, 50%) hsl(248, 53%, 58%);
+}
+/* 1) Hue 
+    - It is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. */
+/* 2) Saturation 
+    - Saturation can be described as the intensity of a color
+    - 100% is pure color, no shades of gray
+    - 50% is 50% gray, but you can still see the color
+    - 0% is completely gray; you can no longer see the color */
+/* 3) Lightness
+    - Described as how much light you want to give the color
+    - Where 0% means no light (black), 50% means 50% light (neither dark nor light) and 100% means full lightness (white) */
+/* Shades of gray are often defined by setting the hue and saturation to 0
+Adjust the lightness from 0% to 100% to get darker/lighter shades */
+p {
+  color: hsl(0, 0%, 0%) hsl(0, 0%, 24%) hsl(0, 0%, 47%) hsl(0, 0%, 71%)
+    hsl(0, 0%, 94%) hsl(0, 0%, 100%);
+}
