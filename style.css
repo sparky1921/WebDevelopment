@@ -1,0 +1,50 @@
+/* Span styles */
+#first {
+    background-color: black;
+    color: white;
+    padding: 5px;
+  }
+  
+  #second {
+    background-color: red;
+    color: white;
+    padding: 5px;
+  }
+  
+  #third {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+  }
+  
+  #fourth {
+    background-color: green;
+    color: white;
+    padding: 5px;
+  }
+  
+  /* Div styles */
+  #fifth {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+  }
+  
+  #sixth {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+  }
+  
+  #seventh {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+  }
+  
+  #eighth {
+    background-color: lightpink;
+    color: black;
+    padding: 10px;
+  }
+  
