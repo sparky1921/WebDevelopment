@@ -3,8 +3,8 @@
 /* Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values */
 
 /* CSS Color Name
-- Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
-- Example: Tomato, Orange, Red, Black, Gray, DodgerBlue, MediumSeaGreen, SlateBlue, Violet */
+  - Colors are specified using predefined color names.
+  - Example: Tomato, Orange, Red, Black, Gray, DodgerBlue, MediumSeaGreen, SlateBlue, Violet */
 
 /* CSS Background Color
     - By this you can set the background color for HTML elements
@@ -124,6 +124,6 @@ p {
 /* Shades of gray are often defined by setting the hue and saturation to 0
 Adjust the lightness from 0% to 100% to get darker/lighter shades */
 p {
-  color: hsl(0, 0%, 0%) hsl(0, 0%, 24%) hsl(0, 0%, 47%) hsl(0, 0%, 71%)
+  color: hsl(0, 0%, 0%) hsl(0, 0%, 24%) hsl(0, 0%, 47%) hsl(0, 0%, 33%)
     hsl(0, 0%, 94%) hsl(0, 0%, 100%);
 }

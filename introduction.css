@@ -8,6 +8,9 @@
         selector {
             property-name: value;
         }
+        body {
+          background-color: black;
+        }
     - The declaration block contains one or more declarations separated by semicolons
     - Each declaration includes a CSS property name and a value, separated by a colon
     - Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces
@@ -49,6 +52,7 @@ h1 {
         - Here, all <p> elements on the page will be center-aligned, with a red text color */
 p {
   text-align: center;
+  background-color: black;
   color: red;
 }
 
@@ -57,23 +61,26 @@ p {
     - The id of an element is unique within a page, so the id selector is used to select one unique element!
     - To select an element with a specific id, write a hash (#) character, followed by the id of the element
     - Here, the CSS rule below will be applied to the HTML element with id="para1" */
-#para1 {
-  text-align: center;
-  color: red;
+#tagline {
+  text-align: right;
+  color: orange;
 }
 
 /* 3) Class Selector
     - The class selector selects HTML elements with a specific class attribute
     - To select elements with a specific class, write a period (.) character, followed by the class name */
-.center {
-  text-align: center;
-  color: red;
+.inline-divs {
+  display: inline;
+  background-color: azure;
+}
+
+.bg-red {
+  background-color: red;
 }
 
 /* You can also specify that only specific HTML elements should be affected by a class */
-p.center {
-  text-align: center;
-  color: red;
+td.bg-red {
+  background-color: red;
 }
 
 /* 4) Universal Selector
@@ -87,7 +94,7 @@ p.center {
 /* 5) Grouping Selector
     - The grouping selector selects all the HTML elements with the same style definitions
     - It will be better to group the selectors, to minimize the code
-    h1 {
+      h1 {
         text-align: center;
         color: red;
       }
@@ -105,9 +112,20 @@ h1,
 h2,
 p {
   text-align: center;
-  color: red;
+  color: blue;
 }
 
+#tagline, #section, #blue {
+  color: aquamarine;
+}
+
+.bg-red, .main, .inline-divs {
+  display: block;
+}
+
+h1, #tagline, .bg-red {
+  padding: 5px;
+}
 
 /* How To Add CSS
     There are three ways of inserting a style sheet:
@@ -119,7 +137,7 @@ p {
   - An inline style may be used to apply a unique style for a single element
   - To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property
     <body>
-      <h1 style="color:blue;text-align:center;">This is a heading</h1>
+      <h1 style="color:blue; text-align:center;">This is a heading</h1>
       <p style="color:red;">This is a paragraph.</p>
     </body> */
 
@@ -170,3 +188,10 @@ p {
         3. Browser default
       - So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
  */
+ 
+ .bg-red {
+   color: blue;
+  }
+  h1 {
+   color: yellow;
+  }
