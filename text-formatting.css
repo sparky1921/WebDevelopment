@@ -1,0 +1,102 @@
+/* Text Formatting */
+h1, p {
+    margin: 50px 0;
+}
+
+.first {
+    color: blue;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+h1 {
+    text-align: left;
+    text-align: right;
+    text-align: center;
+}
+
+.second {
+    vertical-align: super;
+}
+
+.third {
+    text-align: justify;
+    text-align-last: left;
+    text-align-last: right;
+    text-align-last: center;
+    text-align-last: justify;
+}
+
+.decor {
+    text-decoration-line: line-through;
+    text-decoration-line:overline;
+    text-decoration-line:underline;
+    text-decoration-line:overline underline;
+    text-decoration-color: blue;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 5px;
+    text-decoration-thickness: 100%;
+}
+
+
+/* The text-decoration property is a shorthand property for:
+
+text-decoration-line (required)
+text-decoration-color (optional)
+text-decoration-style (optional)
+text-decoration-thickness (optional) */
+
+.decor{
+    text-decoration: overline red dotted 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    color: red;
+}
+
+.lowercase {
+    text-transform: lowercase;
+    color: orange;
+}
+
+.capitalize {
+    text-transform: capitalize;
+    color: blue;
+}
+
+.word-spacing {
+    word-spacing: 20px;
+}
+
+.letter-spacing {
+    letter-spacing: 20px;
+}
+
+.line-height {
+    line-height: 50px;
+    line-height: 1.5;
+}
+
+.text-indent {
+    text-indent: 50px;
+}
+
+.white-space {
+    text-wrap: nowrap;
+}
+
+.shadow {
+    color: white;
+    text-shadow: 1px 1px black; /* horizontal vertical */
+    text-shadow: 1px 1px 2px black; /* horizontal vertical blur */
+    text-shadow: 1px 1px 2px black; /* horizontal vertical blur */
+
+    text-shadow: 1px 1px 2px black, 0px 0px 3px lightgreen, 0px 0px 5px green;
+}
