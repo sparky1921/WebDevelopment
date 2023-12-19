@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  /* margin: 0px;
+    padding: 0px; */
+}
+
+.target {
+  background-color: red;
+  border: 2px solid white;
+}
+
+.support {
+  border: 2px solid white;
+  display: block;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+}
+
+.inline {
+  display: inline;
+  width: 15%;
+  border: 2px solid white;
+}
+
+/* All CSS Dimension Properties
+height	Sets the height of an element
+max-height	Sets the maximum height of an element
+max-width	Sets the maximum width of an element
+min-height	Sets the minimum height of an element
+min-width	Sets the minimum width of an element
+width       Sets the width of an element */
